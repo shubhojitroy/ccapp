@@ -1,0 +1,146 @@
+<div>
+  <md-toolbar color="primary"> 
+    <span><a href="././">Connell Carpentry</a></span>   
+    <button md-icon-button [md-menu-trigger-for]="menu">
+      
+      <i class="material-icons">menu</i>
+    </button>    
+  </md-toolbar>
+  <md-menu y-position="after" #menu="mdMenu">
+    <a md-menu-item href="#showcase"><md-icon>fingerprint</md-icon> <span>Service</span></a>
+    <a md-menu-item href="#info1"><md-icon>announcement</md-icon> <span>Maintenance</span></a>
+    <a md-menu-item href="#contact"><md-icon>contact_mail</md-icon> <span>Contact</span></a>
+  </md-menu>
+  
+  <div class="container"
+     fxLayout
+     fxLayout.xs="column"
+     fxLayoutAlign="center"
+     fxLayoutGap="10px"
+     fxLayoutGap.xs="0">
+      <img class="home-design" src = "assets/images/wood.jpg" alt="Smooth Construction" />
+  </div>
+  
+  <div class="container"
+     fxLayout
+     fxLayout.xs="column"
+     fxLayoutAlign="center"
+     fxLayoutGap="10px"
+     fxLayoutGap.xs="0">
+    <div id="showcase" class="showcase" fxFlex="29%">
+      <md-card style="background: transparent;">
+        <img md-card-image src = "assets/images/chiseling.jpg" alt="chiseling" class="chiseling">       
+      </md-card>
+    </div>
+    <div class="showcase" fxFlex="33%">
+      <md-card>
+        <md-card-content>
+          <md-card-title>Areas We Service</md-card-title>
+          <p>
+            We service the Sydney Metropolitan area and surrounding suburbs, Parramatta and Western suburbs and Blue Mountains. We are conveniently on hand 24 hours, 7 days a week.
+          </p> 
+        </md-card-content>    
+        <md-card-actions>
+          <a md-raised-button showcase-btn routerLink="/service" color="primary" title="Service Areas">Read More <i class="material-icons">more_vert</i></a>
+        </md-card-actions>      
+      </md-card> 
+    </div>
+  </div>
+
+  <div class="container container-testimonial"
+     fxLayout
+     fxLayout.xs="column"
+     fxLayoutAlign="center"
+     fxLayoutGap="10px"
+     fxLayoutGap.xs="0">
+    <div id="testimonial" fxFlex="75%">
+      <md-card [@testimonialAwesomeAnimation]='state' (click)="testimonialShowcase()">
+        <md-card-content>        
+          <p>
+            We offer a wide range of client-focused strata building and construction solutions and are conveniently on hand 24 hours, 7 days a week. We provide all our clients with prompt, reliable and cost effective solutions for their building needs. Contact us for an obligation free quote on services
+          </p>
+          <p class="customer">- Connell Carpentary Owner - Neill Connell</p>
+        </md-card-content>
+      </md-card>
+    </div>
+  </div>
+
+  <div class="container"
+     fxLayout
+     fxLayout.xs="column"
+     fxLayoutAlign="center"
+     fxLayoutGap="10px"
+     fxLayoutGap.xs="0">
+    <div id="info1" class="info1" fxFlex="33%"> 
+      <md-card class="info-left">
+        <img md-card-image src = "assets/images/househalfframed.jpg" alt="House Frame" />
+      </md-card>
+    </div>
+    <div class="info1" fxFlex="33%">
+      <md-card class="info-right">
+        <md-card-content>
+          <md-card-title>Building Maintenance, General Repairs &#38; Carpentry Services.</md-card-title>
+          <p>
+            With over 15 years experience working in the strata building and maintenance sector we understand how strata schemes work and guarantee personalised management of all jobs. At Connell Carpentry we specialise in strata building services. Our experience and expertise in launching projects ranges from the largest building inhabited by several owners to the boutique, which is single-owned, that require their own special expertise, is unparalleled. 
+          </p>
+        </md-card-content>    
+        <md-card-actions>
+          <a md-raised-button showcase-btn routerLink="/maintenance" color="primary" title="Strata Maintenance">Read More <i class="material-icons">more_vert</i></a>
+        </md-card-actions>      
+      </md-card>
+    </div>
+  </div>
+
+  <hr>
+
+  <div id="info2">
+    <div class="container"
+     fxLayout
+     fxLayout.xs="column"
+     fxLayoutAlign="center"
+     fxLayoutGap="10px"
+     fxLayoutGap.xs="0">
+    <div class="info-left" fxFlex="33%">
+      <md-card>
+        <md-card-content>
+          <md-card-title>Residential Services</md-card-title>
+          <p>
+            Connell Carpentry offers a complete range of maintenance and handyman services to homeowners. Our high performance and results driven culture means that we only offer the best. From concept to completion, our resources increase your returns and confirm its establishment.
+          </p>
+        </md-card-content>    
+        <md-card-actions>
+          <a md-raised-button showcase-btn routerLink="/residential" color="primary" title="Residential Services" >Read More <i class="material-icons">more_vert</i></a>
+        </md-card-actions>      
+      </md-card>
+    </div>
+    <div class="info-right" fxFlex="33%">
+      <md-card>
+        <md-card-content>
+          <md-card-title>Project Management</md-card-title>
+          <p>
+            Budget driven, scheduled and professional management of carpentry services include: Residential Carpentry &#38; Renovations​​​​​​ - Including Framing, Decks &#38; Pergola's, Cladding, Windows, Doors, flooring, and more! and; Commercial Carpentry - Including Events, TV & Film setting, Strata, &#38; Shop Fitting.
+          </p>
+         </md-card-content>    
+        <md-card-actions>
+          <a md-raised-button showcase-btn routerLink="/management" color="primary" title="Project Management" >Read More <i class="material-icons">more_vert</i></a>
+        </md-card-actions>      
+      </md-card>
+    </div>
+  </div>
+
+  <div id="contact">
+    <div class="container"
+     fxLayout
+     fxLayout.xs="column"
+     fxLayoutAlign="center"
+     fxLayoutGap="10px"
+     fxLayoutGap.xs="0">      
+     <ccapp-customer></ccapp-customer>
+    </div>              
+  </div>
+
+  <md-toolbar color="primary" class="footer">
+    <span class="text-center">Connell Carpentry &copy; 2017</span>
+    <span class="text-center"><ccapp-termpage></ccapp-termpage></span>
+  </md-toolbar>
+</div>

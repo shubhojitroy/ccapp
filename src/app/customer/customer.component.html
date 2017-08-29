@@ -1,0 +1,15 @@
+<form novalidate (ngSubmit)="save()" [formGroup]="customerForm">
+  
+    <md-input-container>          
+      <input mdInput name="" id="nameId" placeholder="Name (required)" formControlName="name" />      
+    </md-input-container><br>
+       
+    <md-input-container>          
+      <input mdInput name="" id="emailId" placeholder="Email (required)" formControlName="email"/>      
+    </md-input-container><br>
+  
+    <md-input-container>          
+      <input mdInput name="" id="messageId" placeholder="Message (required)" formControlName="message"/>     
+    </md-input-container><br>
+  <button color="primary" type="submit" md-raised-button>Submit  <i class="material-icons">present_to_all</i></button>
+</form>

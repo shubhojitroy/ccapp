@@ -1,0 +1,34 @@
+span a {
+  color: #f5f5f0;
+  text-decoration: none;
+}
+.mat-card-image:first-child {
+    margin-top: 0;     
+}
+.showcase img.mat-card-image {
+  max-width: 53%;
+}
+
+.mat-card-title {
+    font-family:Poppins;
+    color: #250858;
+}
+
+p{
+  font-family:Roboto;
+  letter-spacing: 0.02rem;
+  line-height: 1.25rem;
+}
+
+.info-left img.mat-card-image {
+  max-width: 79%;
+  border: .01rem dotted rgba(119, 119, 119, 0.48);
+  padding: .25rem;
+}
+#contact{
+  background: rgba(243, 195, 195, 0.35);;
+  padding:40px;
+  color:#777;
+  border-top:#333 7px solid;
+  border-bottom:#333 7px solid;
+}

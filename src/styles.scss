@@ -1,1 +1,85 @@
 /* You can add global styles to this file, and also import other style files */
+
+//importing sassy css files
+@debug "Sass is awesome!";
+@warn "Custom warning";
+
+@import 'scss/_variables';
+
+@import '~@angular/material/prebuilt-themes/deeppurple-amber';
+
+body { 
+    margin: $body-margin;    
+    font-family: $body-font-family; 
+    background: $body-background;
+    display: flex;
+    flex-flow: column;
+} 
+
+.home-design {
+    flex: 1;
+    display: flex;
+    max-width: 100%;
+    height:auto;
+    border-bottom: $home-design-border-bottom;
+}
+
+md-card { max-width: 80%; 
+    margin: 2em auto; 
+    text-align: center; 
+} 
+
+md-toolbar-row { justify-content: space-between; }
+
+.mat-toolbar {    
+    box-shadow: $md-box-shadow;
+    position: relative;
+    z-index: 10;
+}
+
+hr { 
+    border-top: $hr-border-top; 
+    border-bottom: $hr-border-bottom;
+}
+
+.container-testimonial { 
+    background: $container-testimonial-background; 
+}
+
+.mat-raised-button:active, .mat-raised-button:hover {
+    color: $md-raised-btn-color;
+    background-color: $md-raised-btn-background-color;
+    border-color: $md-raised-btn-border;
+}
+
+md-toolbar.footer {
+    font-size: 0.89rem;
+}
+.open-dialog {
+    font-family:Poppins;
+    color: #250858;
+}
+
+.customer {    
+    color: $md-card-subtitle-customer; 
+    font-family: 'Josefin Sans';
+    font-size: $md-card-subtitle-font-size;
+}
+
+.chiseling {
+    border: .01rem dotted rgba(165, 165, 165, 0.74);
+    padding: .25rem;
+}
+
+md-list-item {
+    display: flex;
+    margin: .5rem auto;
+}
+
+.footer {
+    position:fixed;
+    bottom: 0;
+    margin: 3rem auto 0;
+    padding: 1rem 0 0;
+}
+
